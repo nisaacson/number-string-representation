@@ -57,7 +57,7 @@ number-string-representation --number="-2523.04"
 # outputs "Negative two thousand five hundred twenty-three and 04/100 dollars"
 ```
 
-The following will not work and will instead through an error:
+The following will not work and will instead throw an error. Note that the equals sign from the example above is missing here:
 ```bash
 number-string-representation --number "-2523.04"
 ```
