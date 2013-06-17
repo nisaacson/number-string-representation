@@ -29,12 +29,23 @@ number-string-representation
 # prints out usage information
 ```
 
-As a module within your own code
+As a module within your own code. Note that you must pass a valid number as the input parameter to module function. String numbers will throw an exception
+
+Valid input parameter example
 
 ```javascript
 var numberStringRepresentation = require('number-string-representation')
 var input = 2523.04
 var output = numberStringRepresentation(input)
+console.log('output: %s', output)
+```
+
+
+Invalid input parameter example
+```javascript
+var numberStringRepresentation = require('number-string-representation')
+var input = '2523.04'
+var output = numberStringRepresentation(input) // will throw an error here
 console.log('output: %s', output)
 ```
 

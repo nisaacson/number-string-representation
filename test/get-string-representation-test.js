@@ -1,6 +1,6 @@
 var should = require('should')
 var getStringRepresentation = require('../lib/getStringRepresentation')
-describe('Get String Represenation', function () {
+describe('Get String Representation', function () {
   it('should get string representation for example', function () {
     var input = 2523.04
     var desiredOutput = 'Two thousand five hundred twenty-three and 04/100 dollars'
