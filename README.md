@@ -11,6 +11,9 @@ Take a decimal number and convert it to a string representation. For example if 
 npm install -g number-string-representation
 ```
 
+# Requirements
+The module requires that you have the `node` and `npm` binaries installed and available on your path. The latest version node.js is available [here](http://nodejs.org/download/) and includes the npm binary as well
+
 # Usage
 
 The module can be used either as a stand-alone command line tool or within other javascript code. The module has only been tested on node.js versions 0.8 & 0.10 but should work in the browser without issues
