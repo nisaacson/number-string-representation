@@ -20,7 +20,6 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "eyespect": "~0.1.10",
     "should": "~1.2.2",
     "mocha": "~1.11.0"
   },
