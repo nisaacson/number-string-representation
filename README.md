@@ -1,6 +1,6 @@
 # Number String Representation
 
-Module to take an float amount and convert it to a string representation. For example if you have the number 2523.04, this module will convert 2523.04 to "Two thousand five hundred twenty-three and 04/100 dollars"
+Module to take an float amount and convert it to a string representation. For example if you have the number `2523.04`, this module will convert `2523.04` to `"Two thousand five hundred twenty-three and 04/100 dollars"`
 
 # Installation
 
@@ -40,9 +40,10 @@ When using negative numbers with the command line tool, you must pass them using
 
 ```bash
 number-string-representation --number="-2523.04"
+# outputs "Negative two thousand five hundred twenty-three and 04/100 dollars"
 ```
 
-The following will not work:
+The following will not work and will instead through an error:
 ```bash
 number-string-representation --number "-2523.04"
 ```
