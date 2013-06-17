@@ -36,7 +36,7 @@ function validateInput(input) {
   }
   error = {
     message: 'failed to get string representation of number',
-    error: 'input parameter must be have typeof === string',
+    error: 'input parameter must be have typeof === number',
     stack: new Error().stack
   }
   return error
