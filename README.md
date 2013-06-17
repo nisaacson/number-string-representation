@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/nisaacson/number-string-representation.png)](https://travis-ci.org/nisaacson/number-string-representation)
 [![Dependency Status](https://david-dm.org/nisaacson/number-string-representation.png)](https://david-dm.org/nisaacson/number-string-representation)
 
-Module to take an float amount and convert it to a string representation. For example if you have the number `2523.04`, this module will convert `2523.04` to `"Two thousand five hundred twenty-three and 04/100 dollars"`
+Take a decimal number and convert it to a string representation. For example if you have the number `2523.04`, this module will convert `2523.04` to `"Two thousand five hundred twenty-three and 04/100 dollars"`
 
 # Installation
 
