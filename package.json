@@ -1,7 +1,7 @@
 {
   "name": "number-string-representation",
   "version": "0.0.1",
-  "description": "Module to take an decimal number and convert it to its string representation",
+  "description": "Cake a decimal number and convert it to its string representation",
   "main": "index.js",
   "directories": {
     "test": "test"
