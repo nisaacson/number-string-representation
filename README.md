@@ -23,6 +23,7 @@ var numberStringRepresentation = require('number-string-representation')
 var input = 2523.04
 var output = numberStringRepresentation(input)
 console.log('output: %s', output)
+```
 
 # Negative numbers
 If you supply a negative number as an input, the output will be prepended with the text 'Negative '
