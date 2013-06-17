@@ -76,6 +76,9 @@ The following will not work and will instead throw an error. Note that the equal
 number-string-representation --number "-2523.04"
 ```
 
+# Limitations
+
+Currently the module only supports numbers in the range [-999,999,999,999,999, 999,999,999,999,999], which corresponds to negative trillions to positive trillions
 # Test
 
 ```bash

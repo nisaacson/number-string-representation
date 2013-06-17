@@ -21,7 +21,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "should": "~1.2.2",
-    "mocha": "~1.11.0"
+    "mocha": "~1.11.0",
+    "eyespect": "~0.1.10"
   },
   "dependencies": {
     "optimist": "~0.5.2"

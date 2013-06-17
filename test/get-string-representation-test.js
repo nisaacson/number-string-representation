@@ -21,6 +21,19 @@ describe('Get String Representation', function () {
     var output = getStringRepresentation(input)
     output.should.eql(desiredOutput)
   })
+  it('should get string representation where hundreds are not set', function () {
+    var input = 1099
+    var desiredOutput = 'One thousand ninety-nine and 00/100 dollars'
+    var output = getStringRepresentation(input)
+    output.should.eql(desiredOutput)
+  })
+
+  it('should get string representation for one million', function () {
+    var input = 1000000
+    var desiredOutput = 'One million and 00/100 dollars'
+    var output = getStringRepresentation(input)
+    output.should.eql(desiredOutput)
+  })
 
   it('should get string representation for negative inputs', function () {
     var input = -2523.14

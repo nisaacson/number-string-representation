@@ -12,6 +12,7 @@ var getStringRepresentation = require('./lib/getStringRepresentation')
 
 
 module.exports = numberStringRepresentation;
+
 function numberStringRepresentation(input) {
   var error = validateInput(input)
   if (error) {
@@ -30,13 +31,35 @@ function numberStringRepresentation(input) {
 function validateInput(input) {
   var error, typeOfInput
     typeOfInput = typeof input
-    if (typeOfInput === 'number') {
-      return null
-    }
+  if (typeOfInput === 'number') {
+    return validateSize(input)
+  }
   error = {
     message: 'failed to get string representation of number',
     error: 'input parameter must be have typeof === string',
     stack: new Error().stack
   }
   return error
+}
+
+/**
+ * validateSize
+ * @param  {Number} input the input decimal number to convert to a string representation
+ * @return {Error} null if the input is within the supported range, an error object otherwise
+ */
+
+function validateSize(input) {
+  var error, absInput, maxSize;
+  absInput = Math.abs(input)
+  maxSize = Math.pow(10, 15)
+  if (absInput >= maxSize) {
+    var err = 'input parameter must be in range [-' + maxSize + ', ' + maxSize + ']'
+    error = {
+      message: 'failed to get string representation of number',
+      error: err,
+      stack: new Error().stack
+}
+    return error
+  }
+  return null
 }
