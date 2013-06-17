@@ -10,10 +10,20 @@ npm install -g number-string-representation
 
 # Usage
 
+The module can be used either as a stand-alone command line tool or within other javascript code. The module has only been tested on node.js versions 0.8 & 0.10 but should work in the browser without issues
+
+
 As a command line tool
 ```bash
-number-string-representation 2523.04
+number-string-representation --number="2523.04"
 # outputs "Two thousand five hundred twenty-three and 04/100 dollars"
+```
+
+For usage of the command line tool execute the command with no option parameters specified
+
+```bash
+number-string-representation
+# prints out usage information
 ```
 
 As a module within your own code
