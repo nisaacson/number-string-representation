@@ -1,0 +1,35 @@
+{
+  "name": "number-string-representation",
+  "version": "0.0.0",
+  "description": "Module to take an float amount and convert it to a string representation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "''"
+  },
+  "keywords": [
+    "number",
+    "string",
+    "representation",
+    "check",
+    "stringify"
+  ],
+  "author": "Noah Isaacson",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "eyespect": "~0.1.10",
+    "should": "~1.2.2",
+    "mocha": "~1.11.0"
+  },
+  "dependencies": {
+    "optimist": "~0.5.2"
+  },
+  "bin": "cli.js"
+}
