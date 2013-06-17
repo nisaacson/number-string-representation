@@ -5,7 +5,7 @@
  * @return {String}       The string representation for the input number
  *
  * @example if input === 2523.04, the function should return
- *   "Two thousand five hundred and 04/100 dollars"
+ *   "Two thousand five hundred twenty-three and 04/100 dollars"
  */
 
 var getStringRepresentation = require('./lib/getStringRepresentation')
