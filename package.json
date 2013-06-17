@@ -1,17 +1,13 @@
 {
   "name": "number-string-representation",
   "version": "0.0.0",
-  "description": "Module to take an float amount and convert it to a string representation",
+  "description": "Module to take an decimal number and convert it to its string representation",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "''"
   },
   "keywords": [
     "number",
@@ -31,5 +27,15 @@
   "dependencies": {
     "optimist": "~0.5.2"
   },
-  "bin": "cli.js"
+  "bin": {
+    "number-string-representation": "cli.js"
+  },
+  "gitHead": "b988558f181c1014f2999ec54c148880cd1faf1d",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisaacson/number-string-representation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nisaacson/number-string-representation/issues"
+  }
 }
