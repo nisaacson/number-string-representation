@@ -8,6 +8,20 @@ describe('Get String Representation', function () {
     output.should.eql(desiredOutput)
   })
 
+  it('should get string representation with no integer part', function () {
+    var input = .54
+    var desiredOutput = 'Zero and 54/100 dollars'
+    var output = getStringRepresentation(input)
+    output.should.eql(desiredOutput)
+  })
+
+  it('should round fractional cents down', function () {
+    var input = .546
+    var desiredOutput = 'Zero and 54/100 dollars'
+    var output = getStringRepresentation(input)
+    output.should.eql(desiredOutput)
+  })
+
   it('should get string representation with no fractional part', function () {
     var input = 2523
     var desiredOutput = 'Two thousand five hundred twenty-three and 00/100 dollars'

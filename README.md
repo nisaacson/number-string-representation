@@ -78,7 +78,14 @@ number-string-representation --number "-2523.04"
 
 # Limitations
 
-Currently the module only supports numbers in the range [-999999999999999, 999999999999999], which corresponds to negative trillions to positive trillions
+Currently the module only supports numbers in the range [-999999999999999, 999999999999999], which corresponds to negative trillions to positive trillions.
+
+If you input a number with fractional cents, they will always be rounded down. For example
+
+```bash
+number-string-representation --number=".546"
+# will output "Zero and 54/100 dollars"
+```
 
 # Test
 
