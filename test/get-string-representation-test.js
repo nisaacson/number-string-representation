@@ -1,6 +1,5 @@
 var should = require('should')
 var getStringRepresentation = require('../lib/getStringRepresentation')
-var inspect = require('eyespect').inspector()
 describe('Get String Representation', function () {
   it('should get string representation for example', function () {
     var input = 2523.04
