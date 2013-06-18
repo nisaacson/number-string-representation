@@ -12,6 +12,7 @@ catch (err) {
   // stack traces look better with newlines printed instead of escaped \n characters
   var stack = err.stack
   delete err.stack
-  console.dir(err, 'error converting input number to string representation')
-  console.log(stack)
+  console.error(err)
+  console.error(stack)
+  process.exit(1)
 }
